@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F4F4F4"
+    android:padding="10dp" >
+    <TextView
+        android:id="@+id/name_label"
+        android:text="Name: "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/name"
+        android:text="Full Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name_label"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/age_label"
+        android:text="Age: "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/age"
+        android:text="Age: 20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@+id/age_label"
+        android:layout_marginTop="7dp"
+        android:textColor="#343434"
+        android:textSize="16dp" />
+</RelativeLayout>
